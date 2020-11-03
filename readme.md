@@ -24,8 +24,14 @@ To run the app use this command php artisan serve
 Run Tests
 
 Each test has a special group name in the comments section of the file BookApiTest.php.
-To run all tests use this command  ./vendor/bin/phpunit.
-To run a single test use the group name in the command ./vendor/bin/phpunit --group=testname.
+
+To run all tests use this command 
+
+./vendor/bin/phpunit.
+
+To run a single test use the group name in the command 
+
+./vendor/bin/phpunit --group=testname.
 
 Requests
 
