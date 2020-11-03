@@ -20,11 +20,24 @@ Each test has a special group name in the comments section of the file BookApiTe
 To run all tests use this command  ./vendor/bin/phpunit.
 To run a single test use the group name in the command ./vendor/bin/phpunit --group=testname.
 
-Requests & routes
+Requests
 
-| GET|HEAD | http://127.0.0.1:8000/api/books          | books       | App\Http\Controllers\BookController@getAllBooks |
-| POST     | http://127.0.0.1:8000/api/books          | book.store  | App\Http\Controllers\BookController@storeBook   |
-| GET|HEAD | http://127.0.0.1:8000/api/books/{bookId} | book.read   | App\Http\Controllers\BookController@getBookById |
-| GET|HEAD | http://127.0.0.1:8000/api/books/{id}     | book.find   | App\Http\Controllers\BookController@findBook    |
-| PUT      | http://127.0.0.1:8000/api/books/{id}     | book.update | App\Http\Controllers\BookController@updateBook  |         
-| DELETE   | http://127.0.0.1:8000/api/books/{id}     | book.delete | App\Http\Controllers\BookController@deleteBook  |  
+Get all book records
+    GET http://127.0.0.1:8000/api/books 
+    
+ Read single book
+    GET http://127.0.0.1:8000/api/books/{id} 
+    
+Create a new book 
+    POST http://127.0.0.1:8000/api/books 
+    
+Find a single book 
+    GET http://127.0.0.1:8000/api/books/{bookId} 
+    
+Update a book record
+    PUT  http://127.0.0.1:8000/api/books/{id} 
+    
+Delete a book record
+    
+DELETE   http://127.0.0.1:8000/api/books/{id} 
+
